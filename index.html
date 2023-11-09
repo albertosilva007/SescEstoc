@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de Estoque</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Estoque do Sesc</h1>
+        <form id="form">
+            <label for="produto">Produto:</label>
+            <input type="text" id="produto" required>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" required>
+
+            <label for="tipo">Tipo:</label>
+            <select id="tipo">
+                <option value="entrada">Entrada</option>
+                <option value="saida">Saída</option>
+            </select>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+
+            <button type="button" onclick="adicionarRegistro()">Adicionar Registro</button>
+        </form>
+
+        <div id="registros">
+            <img src="C:\Users\SAMSUNG\Documents\pastaAlbertoimportante\download.jpeg">
+            <!-- Aqui serão exibidos os registros -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
